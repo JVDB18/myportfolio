@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+html{
+}
+body{
+    margin:0;
+    padding: 0;
+    background-image: url('../public/background.jpg');
+    background-size: cover;
+}
+.navUl{
+    margin-top:0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    padding-right: 15%;
+}
+.navContainer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav{
+    width: 100vw;
+}
+a:visited{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.LpTitleContainer{
+    color: white;
+    font-size: 30px;
+    margin-left: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 200px; 
+}
+.typed{
+    
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    border-right: .15em solid orange;animation-fill-mode: forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+.mainLpContainer{
+    display: flex;
+}
+.rotationContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;  
+}
+.rotate1,.rotate2,.rotate3, .rotate4, .rotate5{
+    transform: rotate(45deg);
+    border:solid 1px rgba(255, 255, 255, 0.445);
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.171);
+    margin-top: 40%;
+}
+.rotate1{
+    margin-right: -100px;
+    margin-left: -70px;
+    
+
+}
+.rotate2{
+    transform: rotate(1deg);
+    margin-left: -200px;
+    background-image: url('../public/pdp-removebg-preview.png');
+    background-color: #1F1F1F;
+    background-size: cover;
+    width:250px;
+    height: 250px;
+    border:solid 1px rgba(243, 243, 243, 0.897);
+}
+.rotate3{
+    transform: rotate(55deg);
+    margin-left: -300px;
+    border:solid 3px rgba(243, 243, 243, 0.89);
+}
+.rotate4{
+    transform: rotate(150deg);
+    margin-left: -300px;
+    border:solid 1px rgba(243, 243, 243, 0.801);
+}
+.rotate5{
+    transform: rotate(25deg);
+    margin-left: -300px;
+    border:solid 2px rgba(243, 243, 243, 0.89);
+}
